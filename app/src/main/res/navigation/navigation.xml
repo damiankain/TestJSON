@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/list_fragment">
+
+    <fragment
+        android:id="@+id/list_fragment"
+        android:name="com.damiankain.testjson.ListFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/to_description_fragment"
+            app:destination="@id/description_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/description_fragment"
+        android:name="com.damiankain.testjson.DescriptionFragment"
+        tools:layout="@layout/fragment_description"/>
+
+
+</navigation>
